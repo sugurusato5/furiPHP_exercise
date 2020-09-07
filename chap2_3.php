@@ -7,6 +7,6 @@ if ($score_1 >= 80 && $score_2 >= 80) {
     var_dump("合格です");
 } elseif ($score_1 >= 50 || $score_2 >= 50) {
     var_dump("追試です");
-} elseif ($score_1 < 50 && $score_2 < 50) {
+} else {
     var_dump("不合格です");
 }
