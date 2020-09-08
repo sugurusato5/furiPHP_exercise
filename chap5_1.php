@@ -20,10 +20,10 @@ function constellation($month, $day) {
     ];
 
     foreach ($signs as $sign) {
-        $start_m = ["period_start"][0];
-        $start_d = ["period_start"][1];
-        $end_m = ["period_end"][0];
-        $end_d = ["period_end"][1];
+        $start_m = $sign["period_start"][0];
+        $start_d = $sign["period_start"][1];
+        $end_m = $sign["period_end"][0];
+        $end_d = $sign["period_end"][1];
 
         if($month == $start_m && $start_d <= $day){
             return $sign["name"];
