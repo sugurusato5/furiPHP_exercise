@@ -29,8 +29,6 @@ function constellation($month, $day) {
             return $sign["name"];
         } elseif($month == $end_m && $day <= $end_d){
             return $sign["name"];
-        } else {
-            
         }
         
     }
@@ -57,8 +55,7 @@ $sign = constellation($month, $day);
             <input type="submit" value="OK">
         </form>
     <?php else:  ?>
-        <p><?= h($month) . "月" . h($day) . "日生まれは" . $sign . "です。"; ?>
-        </p>
+        <p><?= h($month) . "月" . h($day) . "日生まれは" . $sign . "です。"; ?></p>
     <?php endif; ?>
 </body>
 </html>
